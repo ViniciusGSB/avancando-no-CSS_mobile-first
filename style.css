@@ -1,0 +1,100 @@
+:root{
+  --ff-p:'Palanquin','sans-serif'
+  --ff-body:'staatliches','sans-serif'
+}
+
+body{
+  margin: 0;
+  font-family: var(--ff-body);
+}
+
+header{
+  text-align: center;
+  background: #8E9AAF;
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h1{
+  background: #CBC0D3;
+  font-size: 7vw;
+}
+
+main{
+  background: #EFF1FF;
+  padding: 1rem;
+}
+
+p{
+  font-family: var(--ff-p);
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 8vw;
+  width: 80%;
+  margin-left: 10%;
+}
+
+div{
+  text-align: center;
+  position: relative;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+
+div p{
+  background: #FEEAFA;
+  color: #4A4E69;
+  border-radius: 3vw;
+  width: 15vw;
+  height: 4vw;
+  font-size: 2.5vw;
+  position: absolute;
+  top: 2%;
+  right: 30%;
+  padding-top: 1vw;
+  z-index: 1;
+  animation-name: A;
+  animation-duration: 1s;
+}
+
+div p:hover{
+  transform: translateX(2vw);
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+
+img{
+  width: 50%;
+}
+
+div img{
+  animation-name: B;
+  animation-duration: 1s;
+}
+
+@keyframes A{
+0%{
+opacity: 0;
+transform: translateY(-2vw);
+}
+100%{
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes B{
+  0%{
+  opacity: 0;
+  transform: translateY(2vw);
+  }
+  100%{
+  opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+@media (min-width:930px) {
+
+}
